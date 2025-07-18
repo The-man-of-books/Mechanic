@@ -25,3 +25,4 @@ AutoFix Garage is a responsive, conversion-optimized landing page designed for i
 ##  Folder Structure
 |.History
 |Index.html
+|ReadMe
