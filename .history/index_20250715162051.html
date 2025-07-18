@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoFix Garage | Mechanic Workshop</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Swiper CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Hero Section -->
+<section class="relative h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1605559424843-0f6b9b9023eb?auto=format&fit=crop&w=1950&q=80');">
+  <!-- Dark Overlay Gradient -->
+  <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+
+  <!-- Frosted Glass Content Box -->
+  <div class="relative z-10 max-w-2xl w-full text-center px-6 animate-fadeIn">
+    <div class="backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl p-10 shadow-2xl">
+      <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-4 tracking-tight drop-shadow">AutoFix Garage</h1>
+      <p class="text-lg md:text-xl text-gray-200 mb-8">Reliable • Fast • Affordable Vehicle Repair Solutions</p>
+      <a href="#contact" class="inline-flex items-center gap-2 bg-yellow-400 text-black font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-yellow-300 transition duration-300">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8 17l4 4 4-4m0-5l-4-4-4 4" />
+        </svg>
+        Book an Appointment
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Fade-In Animation -->
+<style>
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 1.2s ease-out forwards;
+  }
+</style>
+
+
+  <!-- About Section with Stats -->
+<section class="bg-white py-20 px-6">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-10 animate-fadeIn">
+    
+    <!-- Text Content -->
+    <div>
+      <h2 class="text-4xl font-extrabold text-gray-800 mb-4">About Us</h2>
+      <div class="w-20 h-1 bg-yellow-400 mb-6"></div>
+      <p class="text-lg text-gray-600 leading-relaxed">
+        With over <strong>10 years of hands-on experience</strong>, AutoFix Garage is your trusted partner in vehicle repairs and maintenance. Our certified mechanics deliver top-quality service, fast turnaround, and fair pricing you can rely on.
+      </p>
+      <p class="text-lg text-gray-600 mt-4">
+        Whether it’s diagnostics, routine maintenance, or complex repairs — we do it right the first time.
+      </p>
+    </div>
+
+    <!-- Stats Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+      <!-- Stat 1 -->
+      <div>
+        <div class="bg-yellow-100 text-yellow-600 p-4 rounded-full inline-block mb-4">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold text-gray-800">10+ Years</h3>
+        <p class="text-gray-500">Industry Experience</p>
+      </div>
+
+      <!-- Stat 2 -->
+      <div>
+        <div class="bg-green-100 text-green-600 p-4 rounded-full inline-block mb-4">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7h18M3 12h18M3 17h18" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold text-gray-800">2,500+</h3>
+        <p class="text-gray-500">Vehicles Serviced</p>
+      </div>
+
+      <!-- Stat 3 -->
+      <div>
+        <div class="bg-blue-100 text-blue-600 p-4 rounded-full inline-block mb-4">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14 9l-2 2-2-2m0 6l2-2 2 2m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold text-gray-800">98%</h3>
+        <p class="text-gray-500">Customer Satisfaction</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Optional Fade-in Animation -->
+<style>
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 1s ease-out forwards;
+  }
+</style>
+
+
+  <!-- Services Section -->
+<section class="py-20 bg-white px-6">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-4xl font-extrabold text-gray-800 mb-4">Our Services</h2>
+    <div class="w-20 h-1 bg-yellow-400 mx-auto mb-12"></div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <!-- Service Card Template -->
+      <!-- Repeat this block and change data for each service -->
+      <div onclick="toggleModal(true, {
+        title: 'Engine Diagnostics',
+        description: 'We use the latest diagnostic equipment to quickly identify engine problems and get you back on the road safely.',
+        image: 'https://images.unsplash.com/photo-1605559424843-0f6b9b9023eb?fit=crop&w=800&q=80'
+      })" class="cursor-pointer group bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 text-left">
+        <img src="https://images.unsplash.com/photo-1605559424843-0f6b9b9023eb?fit=crop&w=800&q=80" alt="Engine Diagnostics" class="h-40 w-full object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2 text-gray-800 group-hover:text-yellow-500">Engine Diagnostics</h3>
+          <p class="text-gray-600 text-sm">Identify issues using advanced computer diagnostics.</p>
+        </div>
+      </div>
+
+      <div onclick="toggleModal(true, {
+        title: 'Brake Repair',
+        description: 'Our certified technicians inspect and repair brakes to ensure maximum safety and performance.',
+        image: 'https://images.unsplash.com/photo-1577563908411-5077c29853af?fit=crop&w=800&q=80'
+      })" class="cursor-pointer group bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 text-left">
+        <img src="https://images.unsplash.com/photo-1577563908411-5077c29853af?fit=crop&w=800&q=80" alt="Brake Repair" class="h-40 w-full object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2 text-gray-800 group-hover:text-red-500">Brake Repair</h3>
+          <p class="text-gray-600 text-sm">Safe, reliable brake inspection & replacement.</p>
+        </div>
+      </div>
+
+      <div onclick="toggleModal(true, {
+        title: 'Oil Change',
+        description: 'Regular oil and filter changes extend your engine’s life. We use high-quality oils for all vehicle types.',
+        image: 'https://images.unsplash.com/photo-1605107834470-1e99e839f65a?fit=crop&w=800&q=80'
+      })" class="cursor-pointer group bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 text-left">
+        <img src="https://images.unsplash.com/photo-1605107834470-1e99e839f65a?fit=crop&w=800&q=80" alt="Oil Change" class="h-40 w-full object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2 text-gray-800 group-hover:text-blue-500">Oil Change</h3>
+          <p class="text-gray-600 text-sm">Improve performance with fresh oil & filters.</p>
+        </div>
+      </div>
+
+      <!-- Add 3 more services here just like above... -->
+      <div onclick="toggleModal(true, {
+        title: 'Battery Replacement',
+        description: 'We replace weak or dead batteries on-site, test your system, and ensure it’s good to go.',
+        image: 'https://images.unsplash.com/photo-1587019153164-bf15e540d97b?fit=crop&w=800&q=80'
+      })" class="cursor-pointer group bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 text-left">
+        <img src="https://images.unsplash.com/photo-1587019153164-bf15e540d97b?fit=crop&w=800&q=80" alt="Battery Replacement" class="h-40 w-full object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2 text-gray-800 group-hover:text-green-500">Battery Replacement</h3>
+          <p class="text-gray-600 text-sm">Dead battery? We’ll replace it fast and reliably.</p>
+        </div>
+      </div>
+
+      <div onclick="toggleModal(true, {
+        title: 'Suspension & Alignment',
+        description: 'Bumpy ride? We realign wheels and repair suspension systems for smooth and safe driving.',
+        image: 'https://images.unsplash.com/photo-1627483218074-4e18e1eb2d2b?fit=crop&w=800&q=80'
+      })" class="cursor-pointer group bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 text-left">
+        <img src="https://images.unsplash.com/photo-1627483218074-4e18e1eb2d2b?fit=crop&w=800&q=80" alt="Suspension" class="h-40 w-full object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2 text-gray-800 group-hover:text-indigo-500">Suspension & Alignment</h3>
+          <p class="text-gray-600 text-sm">Realign and rebalance your ride with expert care.</p>
+        </div>
+      </div>
+
+      <div onclick="toggleModal(true, {
+        title: 'Tyre Fitting',
+        description: 'We supply and fit top-brand tyres with professional balancing and same-day turnaround.',
+        image: 'https://images.unsplash.com/photo-1592503254645-26548dba43d1?fit=crop&w=800&q=80'
+      })" class="cursor-pointer group bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 text-left">
+        <img src="https://images.unsplash.com/photo-1592503254645-26548dba43d1?fit=crop&w=800&q=80" alt="Tyre Fitting" class="h-40 w-full object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2 text-gray-800 group-hover:text-purple-500">Tyre Fitting</h3>
+          <p class="text-gray-600 text-sm">Quality tyre supply, fitting & balancing while you wait.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+<div id="serviceModal" class="fixed inset-0 bg-black/60 z-50 hidden items-center justify-center">
+  <div class="bg-white rounded-xl p-6 max-w-lg w-full shadow-xl relative animate-fadeIn">
+    
+    <!-- Close Button -->
+    <button onclick="toggleModal()" class="absolute top-3 right-3 text-gray-400 hover:text-gray-700 text-2xl font-bold">×</button>
+
+    <!-- Modal Image -->
+    <img id="modalImage" src="" alt="Service Image" class="rounded-lg mb-4 w-full h-48 object-cover">
+
+    <!-- Modal Title -->
+    <h3 id="modalTitle" class="text-2xl font-bold mb-2 text-gray-800"></h3>
+
+    <!-- Modal Description -->
+    <p id="modalDescription" class="text-gray-600 text-base leading-relaxed mb-6"></p>
+
+    <a href="#contact" 
+   onclick="toggleModal(false)" 
+   class="block w-full text-center bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded-full shadow transition duration-300">
+  Book Now
+</a>
+  </div>
+</div>
+
+</section>
+<style>
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 0.3s ease-out forwards;
+  }
+</style>
+
+
+
+  <!-- Testimonials Carousel -->
+<section class="bg-gray-100 py-16 px-6">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-12">What Our Customers Say</h2>
+
+    <!-- Swiper Container -->
+    <div class="swiper mySwiper max-w-4xl mx-auto">
+      <div class="swiper-wrapper">
+
+        <!-- Testimonial Slide 1 -->
+        <div class="swiper-slide bg-white p-6 rounded-lg shadow-md flex items-start space-x-4 max-w-md mx-auto">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Thabo M" class="w-16 h-16 rounded-full object-cover flex-shrink-0">
+          <blockquote class="italic text-gray-700">
+            “Best service I’ve ever received. My car was fixed in a day!”
+            <footer class="mt-2 font-semibold text-gray-900">– Thabo M.</footer>
+          </blockquote>
+        </div>
+
+        <!-- Testimonial Slide 2 -->
+        <div class="swiper-slide bg-white p-6 rounded-lg shadow-md flex items-start space-x-4 max-w-md mx-auto">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Susan K" class="w-16 h-16 rounded-full object-cover flex-shrink-0">
+          <blockquote class="italic text-gray-700">
+            “Friendly staff and very affordable. Highly recommend.”
+            <footer class="mt-2 font-semibold text-gray-900">– Susan K.</footer>
+          </blockquote>
+        </div>
+
+        <!-- Testimonial Slide 3 -->
+        <div class="swiper-slide bg-white p-6 rounded-lg shadow-md flex items-start space-x-4 max-w-md mx-auto">
+          <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="David L" class="w-16 h-16 rounded-full object-cover flex-shrink-0">
+          <blockquote class="italic text-gray-700">
+            “Professional and reliable. They fixed my brakes perfectly.”
+            <footer class="mt-2 font-semibold text-gray-900">– David L.</footer>
+          </blockquote>
+        </div>
+
+        <!-- Testimonial Slide 4 -->
+        <div class="swiper-slide bg-white p-6 rounded-lg shadow-md flex items-start space-x-4 max-w-md mx-auto">
+          <img src="https://randomuser.me/api/portraits/women/29.jpg" alt="Lerato N" class="w-16 h-16 rounded-full object-cover flex-shrink-0">
+          <blockquote class="italic text-gray-700">
+            “Great customer service and very knowledgeable mechanics.”
+            <footer class="mt-2 font-semibold text-gray-900">– Lerato N.</footer>
+          </blockquote>
+        </div>
+
+        <!-- Testimonial Slide 5 -->
+        <div class="swiper-slide bg-white p-6 rounded-lg shadow-md flex items-start space-x-4 max-w-md mx-auto">
+          <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Sipho M" class="w-16 h-16 rounded-full object-cover flex-shrink-0">
+          <blockquote class="italic text-gray-700">
+            “Affordable prices and fast turnaround. Highly recommended!”
+            <footer class="mt-2 font-semibold text-gray-900">– Sipho M.</footer>
+          </blockquote>
+        </div>
+
+        <!-- Testimonial Slide 6 -->
+        <div class="swiper-slide bg-white p-6 rounded-lg shadow-md flex items-start space-x-4 max-w-md mx-auto">
+          <img src="https://randomuser.me/api/portraits/women/52.jpg" alt="Zanele T" class="w-16 h-16 rounded-full object-cover flex-shrink-0">
+          <blockquote class="italic text-gray-700">
+            “They explained everything clearly and did an amazing job on my car.”
+            <footer class="mt-2 font-semibold text-gray-900">– Zanele T.</footer>
+          </blockquote>
+        </div>
+
+      </div>
+
+      <!-- Pagination -->
+      <div class="swiper-pagination mt-6"></div>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-6 bg-white">
+    <div class="max-w-xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-6">Book a Service</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full px-4 py-2 border rounded" required>
+        <input type="tel" placeholder="Phone Number" class="w-full px-4 py-2 border rounded" required>
+        <input type="text" placeholder="Vehicle Model" class="w-full px-4 py-2 border rounded">
+        <textarea placeholder="Service Needed" class="w-full px-4 py-2 border rounded" rows="4"></textarea>
+        <button type="submit" class="bg-yellow-500 hover:bg-yellow-400 text-white px-6 py-2 rounded w-full">Send Request</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-10 text-center">
+    <p>&copy; 2025 AutoFix Garage | 123 Main Road, Soweto, South Africa</p>
+    <p>Phone/WhatsApp: <a href="tel:+27712345678" class="underline">+27 71 234 5678</a></p>
+    <p>Mon–Sat: 8AM–5PM</p>
+  </footer>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/27712345678?text=Hi%20AutoFix%20Garage%2C%20I%27d%20like%20to%20book%20a%20service." 
+   class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300"
+   target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M16.72 13.06c-.24-.12-1.41-.7-1.63-.78s-.38-.12-.54.12-.62.78-.76.94-.28.18-.52.06a6.4 6.4 0 0 1-1.9-1.18 7.07 7.07 0 0 1-1.32-1.66c-.14-.24 0-.36.1-.48.12-.12.24-.3.36-.42.12-.14.18-.24.3-.42s.06-.36 0-.48-.54-1.3-.74-1.8c-.2-.5-.4-.44-.54-.45h-.46c-.16 0-.42.06-.64.3s-.84.82-.84 2c0 1.18.86 2.3 1 .48 1.18 2.36 3.1 3.46 4.82 3.82.34.06.62.12.88.12.28 0 .86-.12 1.08-.6.2-.42.2-.78.14-.84-.08-.06-.3-.12-.54-.24zm-4.72 8.42c-1.7 0-3.34-.44-4.76-1.26L2 22l1.84-5.36a9.84 9.84 0 0 1-1.5-5.26C2.34 6.5 6.84 2 12.34 2s10 4.5 10 10-4.5 10-10 10z"/>
+  </svg>
+</a>
+
+<!-- Tailwind Modal Styles -->
+<style>
+  .modal-enter {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  .modal-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.3s ease-out;
+  }
+</style>
+
+<!-- Modal Wrapper -->
+<div id="serviceModal" class="fixed inset-0 bg-black/60 z-50 hidden items-center justify-center">
+  <div class="bg-white rounded-xl p-8 max-w-lg w-full shadow-xl relative animate-fadeIn">
+    <button onclick="toggleModal()" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700">
+      ✕
+    </button>
+    <img id="modalImage" src="" class="rounded-lg mb-4">
+    <h3 id="modalTitle" class="text-2xl font-bold mb-2 text-gray-800"></h3>
+    <p id="modalDescription" class="text-gray-600 text-base leading-relaxed"></p>
+  </div>
+</div>
+
+<!-- JS for modal -->
+<script>
+  const modal = document.getElementById('serviceModal');
+  const modalImage = document.getElementById('modalImage');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalDescription = document.getElementById('modalDescription');
+
+  function toggleModal(show = false, data = {}) {
+    if (show) {
+      modalImage.src = data.image;
+      modalTitle.textContent = data.title;
+      modalDescription.textContent = data.description;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    } else {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+  }
+</script>
+
+
+
+<script>
+  const modal = document.getElementById('serviceModal');
+  const modalImage = document.getElementById('modalImage');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalDescription = document.getElementById('modalDescription');
+
+  function toggleModal(show = false, data = {}) {
+    if (show) {
+      modalImage.src = data.image;
+      modalTitle.textContent = data.title;
+      modalDescription.textContent = data.description;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    } else {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+  }
+</script>
+
+</body>
+</html>
